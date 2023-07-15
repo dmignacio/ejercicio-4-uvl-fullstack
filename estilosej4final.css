@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+main {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background: #1f2023;
+    
+}
+
+form{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titulo {
+    border-top: 15px outset #4d6d63;
+    border-bottom: 15px inset #4d6d63;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    width: 100%;
+    margin: 20px auto
+}
+
+
+
+/* Formulario */
+
+
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold
+}
+
+
+
+fieldset {   
+    background-color: #d6e2de;
+    border: 1px solid #56796e;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+
+}
+
+
+legend {
+    text-align: left;
+    background: #4d6d63;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+
+}
+
+
+label {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-weight: bold;
+
+}
+
+
+input,
+select {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: 0;
+    text-align: right;
+    
+}
+
+select option {
+    text-align: left;
+}
+
+.datos-personales {
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+input[type=text],
+input[type=number],
+select,
+textarea,
+input[type=email],
+input[type=tel] {
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #56796e;
+    padding-right: 3px;
+}
+
+input[type=text],
+select,
+input[type=tel],
+input[type=email],
+textarea,
+input[type=number] {
+    height: 30px;
+    margin-top: 7px;
+}
+
+input[placeholder] {
+    text-align: left;
+    
+}
+
+.sexo {
+    margin: 20px 0px;
+}
+
+textarea {
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 100px;
+    max-height: 100px;
+    resize: none;
+    padding: 5px;
+}
+
+.datos-contacto {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.actividades {
+    
+    padding-bottom: 20px;
+    display: block;
+    align-items: start;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+}
+
+.actividades p {
+    margin-left: 20px;
+    
+}
+
+.actividades label {
+    margin: 20px 20px;
+    text-align: start;
+}
+
+.actividades input{
+    margin-left: 20px ;
+    text-align: start; 
+}
+
+
+.terminos {
+    width: 80%;
+    margin-top: -10px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: white;
+}
+
+.terminos p {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+}
+
+.enviarinfo {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.enviarinfo input {
+    line-height: 10px;
+    margin: 10px;
+    background-color: #2b3d37;
+    padding: 10px;
+    color: #a6c1b9;
+    border: 1px solid #a6c1b9;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Propiedada Focus */
+
+input:focus {
+    background: #4d6d63;
+    text-align: end;
+    color: white;
+}
+
+textarea:focus {
+    background: #4d6d63;
+    text-align: end;
+}
+
+fieldset:focus-within {
+    background: #a6c1b9;
+}
+
+fieldset:focus-within>legend {
+    background: rgb(43, 61, 55);
+}
+
+input[type=text]:focus,
+textarea:focus {
+    color: white;
+    outline-color: white 1px solid;
+    border: black;
+}
+
+.enviarinfo input:hover {
+    background-color: #a6c1b9;
+    color: #2b3d37;
+    
+}
+
+.bolitas {
+    width: 27%;
+    border-top: 12px dotted #a6c1b9;
+    margin: 20px auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Seleccion */
+h1::selection {
+    background-color: #a6c1b9;
+    color: white
+}
+
+legend::selection {
+    background-color: #a6c1b9;
+    color: white
+}
+
+.campos::selection{
+    background-color: #a6c1b9;
+    color:#1f2023;
+    text-align: left;
+}
+
+p::selection {
+    
+    background-color: #a6c1b9;
+    color:#1f2023;
+}
+
+input[placeholder]::selection{
+    background-color: #a6c1b9;
+    color:#1f2023;
+}
+
+select::selection{
+    background-color: #a6c1b9;
+    color:#1f2023;
+}
+label::selection {
+    background-color: #a6c1b9;
+    color: #1f2023;
+}

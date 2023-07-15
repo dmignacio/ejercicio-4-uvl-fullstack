@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 </title>
+    <!-- <link rel="stylesheet" href="estilosej4final.css"> -->
+ <!--    <link rel="stylesheet" href="estilosej4final1.css"> -->
+    <link rel="stylesheet" href="estilosej4final2.css">
+</head>
+
+<body>
+    <main>
+
+
+
+        <form action="https://postman-echo.com/post" method="post" target="_blank" autocomplete="off" >
+            <div class="titulo">
+                <h1>Vení al Gym! 💪</h1>
+
+            </div>
+            <fieldset class="datos-personales">
+                <legend>🙋‍♂️ Datos Personales👀</legend>
+                <label class="campos" for="nombre">Nombre:*
+                    <input type="text" id="nombre" name="nombre" required autocomplete="off" autofocus>
+                </label>
+
+                <label class="campos" for="apellido">Apellido:*
+                    <input type="text" id="apellido" name="apellido" required autocomplete="off"></label>
+
+                <label class="campos" for="documento">Documento:*
+                    <input type="number" id="documento" name="documento" required autocomplete="off"></label>
+
+                <label class="campos" for="opciones"> Nacionalidad:*
+                    <br>
+                    <select required id="Nacionalidad" name="Nacionalidad">
+                        <option value="">- Seleccionar -</option>
+                        <option value="Argentina" id="Argentina" name="Nacionalidad"  >Argentina</option>
+                        <option value="Uruguay"  id="Uruguay" name="Nacionalidad"  >Uruguay</option>
+                        <option value="Chile"  id="Chile" name="Nacionalidad" >Chile</option>
+                        <option value="Peru" id="Perú" name="Nacionalidad" >Peru</option>
+                    </select>
+                </label>
+                <label for="textarea"> Contanos un poco de vos...
+                    <textarea name="Sobre mi" id="textarea" cols="30" rows="2"></textarea>
+                </label>
+
+                <label class="Sexo" for="Sexo"><p>Sexo:*</p>
+                    <br>
+                    
+                    <input type="radio" value="Femenino" name="Sexo" required> Femenino
+                    <input type="radio" value="Masculino" name="Sexo"> Masculino
+                    <input type="radio" value="Otro" name="Sexo"> Otro
+               
+                </label>
+                
+
+            </fieldset>
+            <div class="bolitas"></div>
+            
+            <fieldset class="datos-contacto">
+                <legend>📱Datos de Contacto ✉️</legend>
+
+                <label class="campos" for="ceular"> Teléfono:
+                    <input type="tel" name="celular" placeholder="Código de área y número" autocomplete="off">
+                </label>
+
+                <label class="campos" for="email"> Dirección de correo electrónico:*
+                    <input type="email" name="email" placeholder="Ej: mail@gmail.com" required autocomplete="off">
+                </label>
+            </fieldset>
+
+            <div class="bolitas"></div>
+
+            <fieldset class="actividades">
+                <legend>🚴Actividades 🤸‍♂️</legend>
+                <br>
+                <p>Por favor, indicá cúales actividades te interesan.</p>
+                <br>
+                <label  for="checkbox"> Sede Palermo:
+                    <br>
+                    <br> <input type="checkbox" value="Basquet" name="Sede Palermo:" id="Basquet"> Basquet
+                    <input type="checkbox" value="Boxeo" name="Sede Palermo:" id="Boxeo"> Boxeo
+                    <input type="checkbox" value="Fútbol" name="Sede Palermo:" id="Fútbol"> Fútbol
+                    <input type="checkbox" value="Tenis" name="Sede Palermo:" id="Tenis"> Tenis
+                </label>
+                <br>
+                <br>
+                <label  for="checkbox"> Sede Rosario:
+                    <br>
+                    <br><input type="checkbox" value="Basquet" name="Sede Rosario" id="Basquet"> Basquet
+                    <input type="checkbox" value="Fútbol" name="Sede Rosario" id="Fútbol"> Fútbol
+                    <input type="checkbox" value="Rugby" name="Sede Rosario" id="Rugby"> Rugby
+                    <input type="checkbox" value="Voley" name="Sede Rosario" id="Voley"> Voley
+                </label>
+            </fieldset>
+
+            
+
+            <div class="terminos">
+                <label for="checkbox">
+                    <input type="checkbox" name="Acepta condiones" value="Si" required>Acepto las condiciones*<br>
+                    <input type="checkbox" name="Desea recibir novedades" value="Si">Deseo recibir novedades
+                </label>
+                <p>*:campo obligatorio </p>
+            </div>
+            <div class="enviarinfo">
+                <label for="submit">
+                    <input type="submit" name="submit" value="Iniciar Afiliación"></label>
+
+
+                <label for="reset">
+                    <input type="reset" name="reset" value="Restablecer">
+                </label>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
